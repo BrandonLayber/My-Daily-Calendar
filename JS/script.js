@@ -12,7 +12,7 @@ let hourOutput = moment();
 // DISPLAY FUNCTION FOR CALENDAR
 function calendar(today, calEvents) {
 
-    let rowHr = moment(today).hour(9); //moment js start at 9
+    let rowHr = moment(today).hour(9); //moment js start at 9am
     const calendar = $("div.container"); // jquery selector
     calendar.empty(); // clear any preexisting data from div
 
