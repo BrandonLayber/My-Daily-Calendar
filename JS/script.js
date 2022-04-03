@@ -93,13 +93,13 @@ function calendar(today, calEvents) {
         initCalendar();
     };
 
-    // Clear calendar click handler
+    // Clear calendar onclick
     $("button#clear-cal").on("click", clearCalendar);
 
 
-    // Save button click handler - save calendar event 
+    // save data btn 
     $(document).on("click", "button.saveBtn", function (event) {
-        let calDesc = event.currentTarget.parentElement.children[1].value; // store contents of that row's textarea
-        calEvents[event.currentTarget.id] = calDesc; // add calendar event text to the calEvents object with the time as the key
-        storeCal(); // store the calEvents in local storage
+        let calDesc = event.currentTarget.parentElement.children[1].value; // store contents of row
+        calEvents[event.currentTarget.id] = calDesc; // add calendar event text to the calEvents object
+        storeCal(); // store calEvents locally
     });
