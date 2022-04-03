@@ -64,11 +64,9 @@ function calendar(today, calEvents) {
         };
     };
 
-    
     loadCal(); // load calendar events from local storage
     initCalendar(); // set the current date and render the calendar
     hourTracker(); // start tracking the hour block
-
 
     // checks current time every minute to see if color blocks for past present future need to change
     function hourTracker() {
