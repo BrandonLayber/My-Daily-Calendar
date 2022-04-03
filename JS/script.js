@@ -1,7 +1,7 @@
 // var for today's date
 const calendarDisplay = $("header #dateYear");
 
-// Empty object to store DOM calendar
+// Empty object to store DOM calendar.
 let calEvents = {};
 
 // track when calendar was last rendered
